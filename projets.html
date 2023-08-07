@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Galley Hugo">
+    <meta name="description" content="Appercu des projets que j'ai réaliser">
+    <title>Projets</title>
+    <link rel="stylesheet" href="scripts_annexs/style.css">
+    <script src="scripts_annexs/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay_menu_mobile" onclick="closeMenuMobile()"></div>
+    <header>
+    <h1><a href="index.html" id="Title">Galley Hugo</a></h1>
+    <nav class="header_nav ">
+        <div class="header_nav_close" onclick="closeMenuMobile()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <div class="logo_menu"><a href="index.html">MENU</a></div>
+          
+        <ul class="header_nav_menu">
+            <li class="header_nav_menu_link"> <a href="apropos.html">A Propos</a></li>
+            <li class="header_nav_menu_link"><a href="formations.html">Formations</a></li>
+            <li class="header_nav_menu_link"><a href="projets.html">Projets</a></li>
+        </ul>
+    </nav>
+    <div class="header_burger" onclick="openMenuMobile()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg> 
+    </div>
+</header>
+</body>
+<main>
+    <div class="projets">
+        <a href="https://github.com/Hugo-Galley/How-To-Mine" target="_blank"><img src="items/bitcoin.png" alt="logo_bitcoin" id="logo_bitcoin"></a>
+        <p id="text_btc">Il s'agit du premier projet que j'ai développé ayant pour but de simplifier le minage de cryptomonnaies</p>
+        <a href="https://github.com/Hugo-Galley/Mario-in-Pygame" target="_blank"><img src="items/mario-logo.png" alt="logo_mario" id="logo_mario"></a>
+        <p id="text_mario">C'est une parodie du jeu vidéo Mario en Python. Elle a servi à représenter mon projet de première. Elle a été faite en duo</p>
+        <a href="https://github.com/Hugo-Galley/Ransomware" target="_blank"><img src="items/virus.png" alt="logo_virus" id="logo_virus"></a>
+        <p id="text_virus">Il s'agit d'un ransomware que j'ai codé pour en apprendre davantage sur le fonctionnement des virus</p>
+        <a href="http://firetrack.space" target="_blank"><img src="items/fire.png" alt="logo_fire" id="logo_fire"></a>
+        <p id="text_fire">C'est une playlist collaborative réalisée pour mon projet de Terminal. Elle a été réalisée avec un autre camarade</p>
+    </div>
+</main>
+<footer>
+    <div class="social-media_projets">
+        <a href="https://instagram.com/hugigogo_?igshid=YmMyMTA2M2Y="><img src="items/insta.png" alt="logo_insta" id="logo"></a>
+        <a href="https://github.com/Hugo-Galley"><img src="items/git.png" alt="logo_github" id="logo"></a>
+     
+    </div>
+</footer>
+</html>

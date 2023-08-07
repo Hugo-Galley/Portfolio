@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Galley Hugo">
+    <meta name="description" content="Appercu des formations que j'ai réaliser">
+    <title>Formations</title>
+    <link rel="stylesheet" href="scripts_annexs/style.css">
+    <script src="scripts_annexs/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay_menu_mobile" onclick="closeMenuMobile()"></div>
+    <header>
+    <h1><a href="index.html" id="Title">Galley Hugo</a></h1>
+    <nav class="header_nav ">
+        <div class="header_nav_close" onclick="closeMenuMobile()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <div class="logo_menu"><a href="index.html">MENU</a></div>
+          
+        <ul class="header_nav_menu">
+            <li class="header_nav_menu_link"> <a href="apropos.html">A Propos</a></li>
+            <li class="header_nav_menu_link"><a href="formations.html">Formations</a></li>
+            <li class="header_nav_menu_link"><a href="projets.html">Projets</a></li>
+        </ul>
+    </nav>
+    <div class="header_burger" onclick="openMenuMobile()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg> 
+    </div>
+    
+</header>
+    <main>
+        <div class="study">
+                <img src="items/diplome.png" alt="icone_diplome" id="study_logo">
+                <ul id="liste_study">
+                    <li>Diplome du Baccalauréat Mention Assez Bien</li>
+                    <li>Diplome du Brevet des Collèges Mention Bien </li>
+                </ul>
+        </div>
+        <div class="online_study">
+            <img src="items/cours_en_ligne.png" alt="icone_online_cours" id="online_study_logo">
+            <ul id="online_study_liste">
+                <li> <a href="https://openclassrooms.com/fr/course-certificates/8892422877">Comprendre le Bitcoin et la Blockchain</a></li>
+                <li><a href="https://openclassrooms.com/fr/course-certificates/4255737098">Démarrez votre projet avec Python</a></li>
+                <li><a href="https://openclassrooms.com/fr/course-certificates/8657797298">Objectif IA : initiez-vous à l'intelligence artificielle</a></li>
+                <li><a href="https://openclassrooms.com/fr/course-certificates/5842598614">Découvrez l'univers de la cybersécurité</a></li>
+                <li><a href="https://openclassrooms.com/fr/course-certificates/9596233013">Apprenez à utiliser la ligne de commande dans un terminal</a></li>
+                <li><a href="https://openclassrooms.com/fr/course-certificates/5585032659"> Gérez du code avec Git et GitHub</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://instagram.com/hugigogo_?igshid=YmMyMTA2M2Y="><img src="items/insta.png" alt="logo_insta" id="logo"></a>
+            <a href="https://github.com/Hugo-Galley"><img src="items/git.png" alt="logo_github" id="logo"></a>
+         
+        </div>
+    </footer>
+</body>
+</html>
