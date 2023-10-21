@@ -4,7 +4,12 @@ body{
     font-family: 'Playfair Display', serif;
     background:linear-gradient(90deg, rgba(183,181,215,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
 }
-
+body.transitioning{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out , transform 0.5s ease-in-out;
+    ;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -92,7 +97,7 @@ nav::after{
     font-size: 1.6em;
     width: 33%;
     height: 50%;
-    text-align: center;
+    text-align: left;
     margin-top: 10%;
 }
 .social-media{
@@ -472,4 +477,14 @@ nav::after{
     .pres{
         margin-left: 10%;
     }
+}
+@media screen and (max-height:450px){
+
+    .logo_menu{
+        font-size: 0.7em;
+    }
+    .header_nav_menu{
+        font-size: 0.7em;
+    }
+
 }
