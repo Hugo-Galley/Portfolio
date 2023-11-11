@@ -8,7 +8,6 @@ body.transitioning{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-in-out , transform 0.5s ease-in-out;
-    ;
 }
 *{
     margin: 0px;
@@ -27,7 +26,7 @@ nav {
     top: 0; 
     right: 0;
     float: right;
-    width: 33%;
+    width: 35%;
     margin: 0 auto;
 }
 nav a {
@@ -64,7 +63,7 @@ nav ul {
 }
 nav li {
     float: right;
-    width: 33%;
+    width: 25%;
     text-align: center;
 }
 nav::after{
@@ -73,6 +72,7 @@ nav::after{
     clear: both;
 }
 #Title{
+    margin-top : 30px;
     position: absolute;
     text-decoration: none;
     color: black;
@@ -80,6 +80,15 @@ nav::after{
     justify-content: space-between; 
     align-items: center; 
     padding: 30px; 
+}
+#Title_contact{
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+
 }
 .pres{
     display: flex;
@@ -227,7 +236,7 @@ nav::after{
     margin-top: 30%;
     margin-right: 8%;
 }
-.header_burger{
+.header_burger, .header_burger_contact{
     float: right;
     display: none;
 }
@@ -242,6 +251,52 @@ nav::after{
     margin-left: 5%;
 }
 
+.contact{
+    margin-top: 10%;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 
 @media screen and (max-width:1300px){
     .projets{
@@ -310,6 +365,17 @@ nav::after{
     }
     .header_burger svg{
         margin-top: 30px;
+        stroke: black;
+        width: 50px;
+        height: 50px;
+    }
+    .header_burger_contact{
+        display: block;
+        cursor: pointer;
+    }
+    .header_burger_contact svg{
+        float: right;
+        margin-top: -10px;
         stroke: black;
         width: 50px;
         height: 50px;
